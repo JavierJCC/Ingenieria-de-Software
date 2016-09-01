@@ -1,0 +1,185 @@
+<!DOCTYPE HTML>
+<!--
+	Stellar by HTML5 UP
+	html5up.net | @ajlkn
+	Free for personal and commercial use under the CCA 3.0 license (html5up.net/license)
+-->
+<html>
+	<head>
+		<title>Configuraci&oacute;n</title>
+		<meta charset="utf-8" />
+		<meta name="viewport" content="width=device-width, initial-scale=1" />
+		<!--[if lte IE 8]><script src="assets/js/ie/html5shiv.js"></script><![endif]-->
+		<link rel="stylesheet" href="assets/css/main.css" />
+		<!--[if lte IE 9]><link rel="stylesheet" href="assets/css/ie9.css" /><![endif]-->
+		<!--[if lte IE 8]><link rel="stylesheet" href="assets/css/ie8.css" /><![endif]-->
+		<style>
+			.switch {
+			  
+			  position: relative;
+			  display: inline-block;
+			  width: 60px;
+			  height: 34px;
+			  padding: 1em 3em;
+			 margin: 1em 25%;
+			}
+
+			.switch input {display:none;}
+
+			.slider {
+			  position: absolute;
+			  cursor: pointer;
+			  top: 0;
+			  left: 0;
+			  right: 0;
+			  bottom: 0;
+			  background-color: #ccc;
+			  -webkit-transition: .4s;
+			  transition: .4s;
+			}
+
+			.slider:before {
+			  position: absolute;
+			  content: "";
+			  height: 26px;
+			  width: 26px;
+			  left: 4px;
+			  bottom: 4px;
+			  background-color: white;
+			  -webkit-transition: .4s;
+			  transition: .4s;
+			}
+
+			input:checked + .slider {
+			  background-color: #2196F3;
+			}
+
+			input:focus + .slider {
+			  box-shadow: 0 0 1px #2196F3;
+			}
+
+			input:checked + .slider:before {
+			  -webkit-transform: translateX(26px);
+			  -ms-transform: translateX(26px);
+			  transform: translateX(26px);
+			}
+
+			/* Rounded sliders */
+			.slider.round {
+			  border-radius: 34px;
+			}
+
+			.slider.round:before {
+			  border-radius: 50%;
+			}
+</style>
+	</head>
+	<body>
+
+		<!-- Wrapper -->
+			<div id="wrapper">
+				<!-- Header -->
+			<header id="header" class="alt">
+				<h1>Tutor</h1>
+			</header>
+
+				<!-- Nav -->
+					<nav id="nav">
+						<ul>
+							<li><a href="#first">Inicio</a></li>
+							<li><a href="#second">Progreso</a></li>
+							<li><a href="#cta">Misión de hoy</a></li>
+							<li><a href="#intro" class="active">Agenda</a></li>
+						</ul>
+					</nav>
+
+				<!-- Main -->
+					<div id="main">
+
+					
+
+						<!-- First Section -->
+							<section id="first" class="main special">
+								<header class="major">
+									<h2>Configurar Memorama</h2>
+								</header>
+								<table class="features">
+									<tr>
+										<td>
+											<!--span class="icon major style1 fa-code"></span-->
+											<button>N&uacute;mero de cartas </button>
+										</td>
+										<td>
+											 <input type="range" name="points" min="0" max="10">
+										</td>										
+									</tr>
+									<tr>
+										<td>
+											<!--span class="icon major style1 fa-code"></span-->
+											<button>Tiempo l&iacute;mite </button>
+										</td>	
+										<td>
+											<label class="switch">
+											  <input type="checkbox">
+											  <div class="slider round"></div>
+											</label>
+										</td>
+										<td>
+											<input type="range" name="points" min="0" max="10">
+											</label>
+										</td>										
+									</tr>
+									<tr>
+										<td>
+											<!--span class="icon major style1 fa-code"></span-->
+											<button>Día </button>
+										</td>
+										<td>
+											 <select>
+												  <option value="lunes">Lunes</option>
+												  <option value="martes">Martes</option>
+												  <option value="miercoles">Mi&eacute;rcoles</option>
+												  <option value="jueves">Jueves</option>
+												  <option value="virnes">Viernes</option>
+												  <option value="sabado">S&aacute;bado</option>
+												  <option value="domingo">Domingo</option>
+												</select> 
+										</td>										
+									</tr>
+									<tr>
+										<td>
+											<!--span class="icon major style1 fa-code"></span-->
+											<button>Agregar imagen </button>
+										</td>	
+										<td>
+											<input type="file" name="img">
+										</td>										
+									</tr>
+									<tr>
+										<td></td>
+										<td></td>
+										<!--td><button>Rendiiento</button></td-->
+									</tr>
+
+
+								<table>
+								<footer class="major">
+									<ul class="actions">
+										<li><a href="#" class="button">Aceptar</a></li>
+									</ul>
+								</footer>
+							</section>
+
+			</div>
+
+		<!-- Scripts -->
+			<script src="assets/js/jquery.min.js"></script>
+			<script src="assets/js/jquery.scrollex.min.js"></script>
+			<script src="assets/js/jquery.scrolly.min.js"></script>
+			<script src="assets/js/skel.min.js"></script>
+			<script src="assets/js/util.js"></script>
+			<!--[if lte IE 8]><script src="assets/js/ie/respond.min.js"></script><![endif]-->
+			<script src="assets/js/main.js"></script>
+
+	</body>
+</html>
