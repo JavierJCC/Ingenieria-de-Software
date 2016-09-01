@@ -1,0 +1,87 @@
+#contieneLineas{
+	position:relative;
+	float:left;
+	width:100%;
+	height:100%;
+	/*background-color:green;*/
+}
+#lineas{
+	position:relative;
+	float:left;
+	width:100%;
+	height:200px;
+	/*background-color:red;*/
+}
+.logoLibro{
+	width:70px;
+	height:70px;
+}
+.tercioLinea1{
+	position:relative;
+	float:left;
+	width:33.3%;
+	height:100%;
+	background-color:rgba(75,214,255,0.2);
+	margin: 1% 0 0 0;
+}
+.tercioLinea2{
+	position:relative;
+	float:left;
+	width:33.3%;
+	height:100%;
+	background-color:rgba(255,196,237,0.2);
+	margin: 1% 0 0 0;
+}
+.tercioLinea3{
+	position:relative;
+	float:left;
+	width:33.3%;
+	height:100%;
+	background-color:rgba(161,98,255,0.1);
+	margin: 1% 0 0 0;
+}
+.tercioLinea4{
+	position:relative;
+	float:left;
+	width:33.3%;
+	height:100%;
+	background-color:rgba(255,69,6,0.1);
+	margin: 2% 0 0 0;
+}
+.tercioLinea5{
+	position:relative;
+	float:left;
+	width:33.3%;
+	height:100%;
+	background-color:rgba(161,98,255,0.1);
+	margin: 2% 0 0 0;
+}
+.tercioLinea6{
+	position:relative;
+	float:left;
+	width:33.3%;
+	height:100%;
+	background-color:rgba(75,214,255,0.2);
+	margin: 2% 0 0 0;
+}
+.imgTercio{
+	position:relative;
+	float:left;
+	width:50%;
+	height:100%;
+}
+.mainLong{
+	height:1200px;
+}
+.imgLectu{
+	width:450px;
+	height:330px;
+}
+.btnEnviar{
+	float:right;
+	margin: -8% 5% 0 0;
+}
+.perImg{
+	width:200px;
+	height:200px;
+}
