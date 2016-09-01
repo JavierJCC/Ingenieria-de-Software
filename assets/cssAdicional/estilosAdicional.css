@@ -1,0 +1,155 @@
+.logoLibro{
+	width:70px;
+	height:70px;
+}
+#imgPerfil{
+	position:relative;
+	float:left;
+	width:30%;
+	height:100%;
+	margin:1px;
+	background-color:#ffff;
+}
+#imgPerfil img{
+	margin:5% 0 0 30%;
+	width:30%;
+	height:20%;
+}
+#imgPerfil p{
+	margin:1% 0 0 31%;
+}
+#imgGraficos{
+	position:relative;
+	float:left;
+	width:69.6%;
+	height:100%;
+	background-color:#ffff;
+	
+}
+#margenBar{
+	
+}
+.pSinMargen{
+	margin:5% 0 0 0;
+}
+#tema{
+	position:relative;
+	float:left;
+	width:30%;
+	height:500px;
+	margin:0 1% 0 0;
+	background-color:rgba(75,214,255,0.2);
+	border-radius: 10px 10px 10px 10px;
+	-moz-border-radius: 10px 10px 10px 10px;
+	-webkit-border-radius: 10px 10px 10px 10px;
+	border: 0px solid #000000;
+}
+#texto{
+	position:relative;
+	float:left;
+	width:69%;
+	height:500px;
+	background-color:rgba(255,196,237,0.2);
+	border-radius: 10px 10px 10px 10px;
+	-moz-border-radius: 10px 10px 10px 10px;
+	-webkit-border-radius: 10px 10px 10px 10px;
+	border: 0px solid #000000;
+	
+}
+.textA{
+	width:40px;
+	height:40px;
+}
+.mainLong{
+	height:2100px;
+}
+.contieneTema{
+	position:relative;
+	width:100%;
+
+	float:left;
+	border-radius: 10px 10px 10px 10px;
+	-moz-border-radius: 10px 10px 10px 10px;
+	-webkit-border-radius: 10px 10px 10px 10px;
+	border: 0px solid #000000;
+	
+}
+.titTema{
+	position:relative;
+	float:left;
+	width:75%;
+}
+.imgTema{
+	position:relative;
+	float:left;
+	width:25%;
+	margin:0px;
+	padding:0px;
+}
+.imgTema img{
+	margin:0px;
+	padding:0px;
+}
+#imagenesText{
+	position:relative;
+	float:left;
+	width:50%;
+	height:400px;
+	margin:1% 1% 0 0;
+	background-color:rgba(161,98,255,0.1);
+	border-radius: 10px 10px 10px 10px;
+	-moz-border-radius: 10px 10px 10px 10px;
+	-webkit-border-radius: 10px 10px 10px 10px;
+	border: 0px solid #000000;
+}
+.file-upload {
+  position: relative;
+  overflow: hidden;
+  margin: 10px; 
+  background-color:blue;}
+
+.file-upload input.file-input {
+  position: absolute;
+  top: 0;
+  right: 0;
+  margin: 0;
+  padding: 0;
+  font-size: 20px;
+  cursor: pointer;
+  opacity: 0;
+  filter: alpha(opacity=0); }
+#tiempo{
+	position:relative;
+	float:left;
+	width:49%;
+	height:400px;
+	margin:1% 0 0 0;
+	background-color:rgba(161,98,255,0.1);
+	border-radius: 10px 10px 10px 10px;
+	-moz-border-radius: 10px 10px 10px 10px;
+	-webkit-border-radius: 10px 10px 10px 10px;
+	border: 0px solid #000000;
+}
+#preguntas{
+	position:relative;
+	float:left;
+	width:100%;
+	height:850px;
+	margin:1% 0 0 0;
+	background-color:rgba(255,69,6,0.1);
+	border-radius: 10px 10px 10px 10px;
+	-moz-border-radius: 10px 10px 10px 10px;
+	-webkit-border-radius: 10px 10px 10px 10px;
+	border: 0px solid #000000;
+}
+  
+#cambia{
+	width:33%;
+}
+#longPreg{
+	width:55%;
+}
+.btnEnviar{
+	float:right;
+	margin: 1% 8% 0 0;
+}
