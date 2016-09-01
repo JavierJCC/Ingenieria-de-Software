@@ -4,7 +4,7 @@
 		<title>Dinámicas-Padres</title>
 		<meta charset="utf-8" />
 		<meta name="viewport" content="width=device-width, initial-scale=1" />
-		<link rel="stylesheet" href="assets/css/main.css" />
+		<link rel="stylesheet" href="dinamicasPadres.css" />
 	</head>
 	
 	<body>
@@ -24,13 +24,17 @@
 				<section id="content" class="main">
 
 					<img src = "rutaImagenUsuario" alt = "imagenDeUsuario">
-					<div>
+					<h3>Nombre del usuario niño(a)</h3>
+
+					<div id="infoUsuario">					
 						<h2>Porcentaje de dinámicas cumplidas:</h2>
-						<progress value="50" max="100">50 %</progress>
-					<div>
+						<progress value="50" max="100"></progress>
+						<br>
+						<h2>50%</h2>
+					</div>
 
 					<section>
-						<div>
+						<div id="listDinamicas">
 							<h2>Lista de dinámicas:</h2>
 								<ul>
 								  <li>Dinámica1	<button type="button" name="din1">Agendar</button></li>
@@ -60,7 +64,7 @@
 									<br>
 									Elija el número de respuestas:
 									<br>
-									<select name="numResp">
+									<select name="numResp" id="numResp">
 									    <option value="1">1</option>
 									    <option value="2">2</option>
 									    <option value="3">3</option>
@@ -73,7 +77,9 @@
 									  <li><input type = "text" name = "resp3"><button type="button" name="imResp3">Agregar Imagen</button></li>
 									</ol>
 									<br>
-									<button type="button" name="agregar">Agregar Dinámica</button>
+									<ul class="actions fit">
+									<li><a href="" class="button special fit" id="botonAgregarDin">Agregar Dinámica</a></li>
+								</ul>
 								</fieldset>
 							</form>
 
