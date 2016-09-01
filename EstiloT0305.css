@@ -6,9 +6,9 @@
 
 #imagenes div {
     float: left;
-    width: 132px;
-    height: 100px;
-    background: #37e5d7;
+    width: 145px;
+    height: 115px;
+    background: #d1fcfc;
     margin: 5px;
     padding: 5px;
     border: 1px solid #999;
@@ -37,7 +37,7 @@
     font-size: 18px;
     color: #ffffff;
     text-decoration: none;
-    background:  #b200ff;
+    background:  #2fa5fb;
     padding: 5px 10px;
     border-radius: .5em;
 }
