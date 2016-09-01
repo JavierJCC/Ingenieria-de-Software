@@ -60,6 +60,10 @@ function reiniciarJuego() {
     return false;
 }
 
+function nuevoJuego() {
+    window.location.reload(true);
+}
+
 $(document).ready(function() {
     $("img").hide();
     $("#imagenes div").click(abrirImagen);
@@ -114,6 +118,12 @@ $(document).ready(function() {
                 $("#msgContador").prepend(msg);
                 msg = '<span id="msg2">Has finalizado el juego en </span>';
                 $("#msgTimer").prepend(msg);
+                var divImagenes = $("#imagenes");
+                divImagenes.empty();
+                var imagenCongratulations = "<section class='section-img'><img src='img/congratulations.jpg' alt=''/></section>";
+                var buttonRestartGame  = "<section><button class='link' onclick='nuevoJuego()'>Volver a jugar</button></section>";
+                divImagenes.append(imagenCongratulations);
+                divImagenes.append(buttonRestartGame);
             }
         }
     }
