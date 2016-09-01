@@ -6,7 +6,7 @@
 -->
 <html>
 	<head>
-		<title>Configuraci&oacute;n</title>
+		<title>Configuraci&oacute;n </title>
 		<meta charset="utf-8" />
 		<meta name="viewport" content="width=device-width, initial-scale=1" />
 		<!--[if lte IE 8]><script src="assets/js/ie/html5shiv.js"></script><![endif]-->
@@ -18,7 +18,7 @@
 			  
 			  position: relative;
 			  display: inline-block;
-			  width: 60px;
+			  width: 3em;
 			  height: 34px;
 			  padding: 1em 3em;
 			 margin: 1em 25%;
@@ -59,9 +59,9 @@
 			}
 
 			input:checked + .slider:before {
-			  -webkit-transform: translateX(26px);
-			  -ms-transform: translateX(26px);
-			  transform: translateX(26px);
+			  -webkit-transform: translateX(4em);
+			  -ms-transform: translateX(4em);
+			  transform: translateX(4em);
 			}
 
 			/* Rounded sliders */
@@ -72,6 +72,15 @@
 			.slider.round:before {
 			  border-radius: 50%;
 			}
+			button, #submit	{
+				font-size: 2em;
+			}
+			#opcional{
+					visibility: none;
+			}
+	
+
+
 </style>
 	</head>
 	<body>
@@ -80,7 +89,7 @@
 			<div id="wrapper">
 				<!-- Header -->
 			<header id="header" class="alt">
-				<h1>Tutor</h1>
+				<h1>Configurar Memorama</h1>
 			</header>
 
 				<!-- Nav -->
@@ -101,7 +110,7 @@
 						<!-- First Section -->
 							<section id="first" class="main special">
 								<header class="major">
-									<h2>Configurar Memorama</h2>
+									<h2>Opciones</h2>
 								</header>
 								<table class="features">
 									<tr>
@@ -111,22 +120,22 @@
 										</td>
 										<td>
 											 <input type="range" name="points" min="0" max="10">
-										</td>										
+										</td>
+										<td></td>										
 									</tr>
 									<tr>
 										<td>
 											<!--span class="icon major style1 fa-code"></span-->
-											<button>Tiempo l&iacute;mite </button>
+											<button>Tiempo deseado </button>
 										</td>	
 										<td>
 											<label class="switch">
-											  <input type="checkbox">
+											  <input type="checkbox" name="cambio">
 											  <div class="slider round"></div>
 											</label>
 										</td>
-										<td>
+										<td id="opcional">
 											<input type="range" name="points" min="0" max="10">
-											</label>
 										</td>										
 									</tr>
 									<tr>
@@ -144,7 +153,8 @@
 												  <option value="sabado">S&aacute;bado</option>
 												  <option value="domingo">Domingo</option>
 												</select> 
-										</td>										
+										</td>
+										<td></td>										
 									</tr>
 									<tr>
 										<td>
@@ -153,26 +163,32 @@
 										</td>	
 										<td>
 											<input type="file" name="img">
-										</td>										
+										</td>
+										<td></td>										
 									</tr>
-									<tr>
-										<td></td>
-										<td></td>
-										<!--td><button>Rendiiento</button></td-->
-									</tr>
-
-
 								<table>
 								<footer class="major">
 									<ul class="actions">
-										<li><a href="#" class="button">Aceptar</a></li>
+										<li><a href="#" class="button" id="submit">Aceptar</a></li>
 									</ul>
 								</footer>
 							</section>
 
+
 			</div>
 
 		<!-- Scripts -->
+			<script type="text/javascript">
+				var div = document.getElementById("opcional");
+				 var porNombre=document.getElementsByName("cambio")[0].checked;
+				if(porNombre==true){
+					div.style.display = "block";
+				}
+					
+				else
+					div.style.display = "none";
+
+			</script>
 			<script src="assets/js/jquery.min.js"></script>
 			<script src="assets/js/jquery.scrollex.min.js"></script>
 			<script src="assets/js/jquery.scrolly.min.js"></script>
