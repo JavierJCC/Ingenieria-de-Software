@@ -121,7 +121,7 @@ $(document).ready(function() {
                 var divImagenes = $("#imagenes");
                 divImagenes.empty();
                 var imagenCongratulations = "<section class='section-img'><img src='img/congratulations.jpg' alt=''/></section>";
-                var buttonRestartGame  = "<section><button class='link' onclick='nuevoJuego()'>Volver a jugar</button></section>";
+                var buttonRestartGame  = "<section><button style='width:100%' class='link' onclick='nuevoJuego()'>Volver a jugar</button></section>";
                 divImagenes.append(imagenCongratulations);
                 divImagenes.append(buttonRestartGame);
             }
