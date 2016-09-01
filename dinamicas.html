@@ -1,0 +1,217 @@
+<!DOCTYPE HTML>
+<html>
+	<head>
+		<title>Dinámicas</title>
+		<meta charset="utf-8" />
+		<meta name="viewport" content="width=device-width, initial-scale=1" />
+		<link rel="stylesheet" href="dinamicas.css" />
+		<!-- Biblioteca jQuery -->
+		<script src="http://ajax.googleapis.com/ajax/libs/jquery/1.11.0/jquery.min.js"></script> 
+
+		<!-- Archivo CSS jsGeork -->
+		<link rel="stylesheet" href="jsgeork/jquery.jsgeork.css"> 
+
+		<!-- Archivo JS jsGeork -->
+		<script src="jsgeork/jquery.jsgeork.js"></script> 
+
+
+
+
+
+
+
+
+		<script type="text/javascript" src="js/jquery-1.7.1.min.js"></script>
+		<script type="text/javascript">
+		$(function(){
+		   $("#Dinamica").click(function(){
+		       $("#RedaccionDinamica").css("display","");
+ 		  });
+		   $("#Termine").click(function(){
+		       $("#RedaccionDinamica").css("display","none");
+		   });
+		});
+		</script>
+
+
+	<script type="text/javascript">
+		$(function(){
+		   $("#Preguntas").click(function(){
+		       $("#myprefix_pem_identifier").css("display","");
+		        $("#Termine").css("display","");
+ 		  });
+		   $("#Termine").click(function(){
+		       $("#myprefix_pem_identifier").css("display","none");
+		   });
+		});
+		</script>
+
+
+
+	</head>
+	
+	<body>
+		<!-- Wrapper -->
+		<div id="wrapper">
+
+			<!-- Header -->
+			<header id="header">
+				<h1>Dinámicas</h1>
+				<p>Vamos hacer algo este día!.</p>
+			</header>
+
+			<!-- Main -->
+			<div id="main">
+
+				<!-- Content -->
+				<section id="content" class="main">
+
+					<img src = "ImagenUsuario.png" width="80" height="80" alt = "imagenDeUsuario">
+					<h3>Nombre del usuario niño(a)</h3>
+
+					<div id="infoUsuario">					
+						<h2>Porcentaje de dinámicas cumplidas el día de hoy:</h2>
+						<progress value="80" max="100"></progress>
+						<br>
+						<h2>80%</h2>
+
+					</div>
+
+					<section>
+						<div id="listDinamicas">
+							<h2>Lista de dinámicas del día de hoy:</h2>
+								<ul>
+								  <li><button id="Dinamica" type="button" name="din1" >Dinámica1 Vamos</button></li>
+								  <li><button id="Dinamica" type="button" name="din2"> Dinámica2 Vamos</button></li>
+								  <li><button id="Dinamica" type="button" name="din3">Dinámica3	Vamos</button></li>
+								</ul>
+
+
+						</div>
+						<br><br><br><br><br><br><br><br>
+					</section>
+
+						<div id="RedaccionDinamica" style="display:none;">
+							<h2>La dinamica # consiste:</h2>
+								<ul>
+								  <li>Ayudar a mamá a recoger los juguetes</li>
+								 
+								</ul>
+
+							<button id="Preguntas" type="button" name="pregunta">Contestar Preguntas!</button>
+							 <button id="Termine" type="button" name="termine" style="display:none;">Termine dinamica!</button>
+						</div>
+						
+							
+						<!-- $addjqueryhead$ -->
+						<!-- $addjsgeorkhead$ -->
+						<div id="myprefix_pem_identifier" style="display:none;>
+  						 <div id="myprefix_pem_identifier_info_aria" class="CSSInfoTextPemPms">Qué objetos recogiste?</div>
+  						 <div style="display: none;" aria-hidden="true">
+						       <div data-info-bottom="myprefix_pem_identifier">
+						       <!-- El interior de este bloque se moverá al final de la actividad -->
+						       <p>¡Suerte!</p>
+						       </div>
+						       <div data-info-ok="myprefix_pem_identifier">
+						           <!-- El interior de este bloque se mostrará cuando se resuelva bien la actividad -->
+ 						          <span class="CSSMsgSuccess">¡CORRECTO GENIAL!</span>
+						       </div>
+						       <div data-info-ko="myprefix_pem_identifier">
+						           <!-- El interior de este bloque se mostrará cuando se resuelva mal la actividad -->
+						           <span class="CSSMsgFail">¡Intentalo de nuevo!</span>
+						       </div>
+						       <div data-opt="opta">A: Carros</div>
+						       <div data-opt="optb">B: Platos</div>
+						       <div data-opt="optc">C: Sillas</div>
+						       <div data-opt="optd">D: Plumas</div>
+
+						   </div>
+						  
+						</div>
+
+
+						<script>
+						var obj_myprefix_pem_identifier = {
+						   "id": "myprefix_pem_identifier",
+						   "type": "single",
+						   "opt": [
+						       {
+ 						          "text": "Option A",
+ 						          "answer": "opta",
+						           "weight": 100
+						       },
+						       {
+						           "text": "Option B",
+ 						          "answer": "optb",
+						           "weight": 0
+						       },
+						       {
+						           "text": "Option C",
+ 						          "answer": "optc",
+ 						          "weight": 0
+ 						      },
+ 						      {
+						           "text": "Option D",
+						           "answer": "optd",
+						           "weight": 0
+ 						      }
+ 						       ],
+ 						  "fieldset": true,
+ 						  "legend": "Pregunta con respuestas de elección múltiple",
+ 						  "random": true,
+ 						  "optsuccess": true,
+ 						  "weighting": 100,
+ 						  "lighting": 0,
+ 						  "icons": "csshexent",
+ 						 "storage": "session",
+ 						  "storagekey": "jsgeork",
+ 						  "showstorage": true,
+ 						  "fillfromstorage": true,
+ 						  "delstorage": true
+						};
+						jsGeork.Questions.Question(obj_myprefix_pem_identifier);
+						</script>
+
+						
+ 
+
+			<!-- Footer -->
+			<footer id="footer">
+				<section>
+					<ul class="actions">
+						<li><a href="#" class="button fit">Regresar a la página de inicio</a></li>
+					</ul>
+				</section>
+				<section>
+					<h2>¡Síguenos en nuestras Redes Sociales!</h2>
+					<ul class="icons">
+						<li><a href="#" class="icon fa-twitter alt"><span class="label">Twitter</span></a></li>
+						<li><a href="#" class="icon fa-facebook alt"><span class="label">Facebook</span></a></li>
+						<li><a href="#" class="icon fa-instagram alt"><span class="label">Instagram</span></a></li>
+						<li><a href="#" class="icon fa-github alt"><span class="label">GitHub</span></a></li>
+						<li><a href="#" class="icon fa-dribbble alt"><span class="label">Dribbble</span></a></li>
+					</ul>
+
+					Si tienes algún problema con tu cuenta, puedes mandar un correo al siguiente email.
+						
+					<dl class="alt">
+						<dt>Email</dt>
+						<dd><a href="#">information@untitled.tld</a></dd>
+					</dl>
+					
+				</section>
+				<p class="copyright">&copy; Untitled. Design: <a href="https://html5up.net">HTML5 UP</a>.</p>
+			</footer>
+
+		</div>
+
+		<!-- Scripts -->
+		<script src="assets/js/jquery.min.js"></script>
+		<script src="assets/js/jquery.scrollex.min.js"></script>
+		<script src="assets/js/jquery.scrolly.min.js"></script>
+		<script src="assets/js/skel.min.js"></script>
+		<script src="assets/js/util.js"></script>
+		<script src="assets/js/main.js"></script>
+
+	</body>
+</html>
